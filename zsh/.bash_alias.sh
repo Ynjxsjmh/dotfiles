@@ -1,4 +1,6 @@
-alias please='sudo $( history -p !! )'
+alias sudo='sudo '
+
+alias pls='sudo sh -c "$(fc -ln -1)"'
 # alias tmux="tmux new-session -d -s \>_ 2>/dev/null; tmux new-session -t \>_ \; set-option destroy-unattached"
 
 alias df='df -h'
