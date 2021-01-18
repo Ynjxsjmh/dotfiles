@@ -9,7 +9,6 @@ alias mkdir='mkdir -p -v'
 alias diff='colordiff'
 alias grep='grep --color=auto'
 alias ls='ls --color=auto -F'
-alias pacman='pacman-color'
 
 alias ll='ls -lah'
 
