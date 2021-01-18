@@ -14,9 +14,9 @@ alias ls='ls --color=auto -F'
 
 alias ll='ls -lah'
 
-alias S='pacman -S'
+alias S='sudo pacman -S'
 alias Ss='pacman -Ss'
-alias Syu='pacman -Syu'
+alias Syu='sudo pacman -Syu'
 
 alias ..='cd ..'
 alias ..2="cd ../.."
