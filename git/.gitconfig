@@ -1,0 +1,23 @@
+[user]
+    email = ynjxsjmh@gmail.com
+    name = Ynjxsjmh
+[core]
+    # @see http://comments.gmane.org/gmane.comp.version-control.git/166098
+    autocrlf = false
+    editor = vim
+    filemode = true
+    ignorecase = false
+    pager = less -x1,5
+    whitespace = cr-at-eol
+[color]
+    branch = auto
+    diff = auto
+	interactive = auto
+    status = auto
+    ui = auto
+[credential]
+    # Run `mkdir ~/.git-credential-cache && chmod 700 ~/.git-credential-cache`
+    # by default, password is stored in memory for certain time
+    # You could use below command to reset timeout
+    # git config --global credential.helper "cache --timeout=3600"
+    helper = cache --timeout=28800 # 8 hours
