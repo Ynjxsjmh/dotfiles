@@ -3,6 +3,7 @@ antigen use oh-my-zsh
 
 # Load bundles from the default repo (robbyrussell's oh-my-zsh)
 antigen bundle git
+antigen bundle pyenv
 antigen bundle command-not-found
 
 # Load bundles from external repos.
