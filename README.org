@@ -2,7 +2,7 @@
 #+CREATOR: Winy
 #+DATE: <2021-01-31 Sun>
 #+EMAIL: ynjxsjmh@gmail.com
-#+TITLE: Dotfiles 配置文件使用指南
+#+TITLE: Dotfiles usage guide
 #+OPTIONS: title:t date:t author:t email:nil timestamp:t creator:nil ;; Meta
 #+OPTIONS: toc:t num:t H:5                         ;; TOC
 #+OPTIONS: ':nil *:t |:t -:t ::t <:t \n:nil ^:{}   ;; Syntax
