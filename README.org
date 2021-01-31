@@ -35,3 +35,7 @@ $ sudo wget https://raw.githubusercontent.com/zsh-users/antigen/v2.2.3/bin/antig
 $ yay -S antigen-git
 #+END_SRC
 
+* stow -t /etc etc
+
+=pacman.conf= - pacman package manager configuration file.
+
