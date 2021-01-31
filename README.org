@@ -1,0 +1,37 @@
+#+AUTHOR: Ynjxsjmh
+#+CREATOR: Winy
+#+DATE: <2021-01-31 Sun>
+#+EMAIL: ynjxsjmh@gmail.com
+#+TITLE: Dotfiles 配置文件使用指南
+#+OPTIONS: title:t date:t author:t email:nil timestamp:t creator:nil ;; Meta
+#+OPTIONS: toc:t num:t H:5                         ;; TOC
+#+OPTIONS: ':nil *:t |:t -:t ::t <:t \n:nil ^:{}   ;; Syntax
+#+OPTIONS: broken-links:nil inline:t
+#+OPTIONS: todo:t p:nil pri:nil stat:t tasks:t     ;; TODO
+#+OPTIONS: c:nil d:(not "LOGBOOK") prop:nil        ;; Drawer
+#+OPTIONS: arch:headline tags:t tex:t f:t e:t
+#+FILETAGS: ::
+
+
+* stow zsh
+
+Download zsh
+
+| Platform | Command              |
+|----------+----------------------|
+| Arch     | sudo pacman -S zsh   |
+| Ubuntu   | sudo apt install zsh |
+
+Download antigen
+
+#+BEGIN_SRC bash
+$ sudo mkdir -p /usr/share/zsh/share/
+$ cd /usr/share/zsh/share
+# Common download
+$ curl -L git.io/antigen > antigen.zsh
+# On Ubuntu lower version
+$ sudo wget https://raw.githubusercontent.com/zsh-users/antigen/v2.2.3/bin/antigen.zsh
+# On Arch
+$ yay -S antigen-git
+#+END_SRC
+
