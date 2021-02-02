@@ -13,6 +13,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zdharma/fast-syntax-highlighting
 # antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle Ynjxsjmh/zsh-poetry@main
 
 # Load the theme.
 antigen theme romkatv/powerlevel10k
