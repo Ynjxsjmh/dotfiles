@@ -39,3 +39,34 @@ $ yay -S antigen-git
 
 =pacman.conf= - pacman package manager configuration file.
 
+* stow tmux
+
+[[https://github.com/tmux/tmux][tmux]] documentation can be found at [[https://github.com/tmux/tmux/wiki][Wiki · tmux/tmux]]. For a local one, you can refer to =man 1 tmux.= Here lists some useful information:
+
+| Tmux Command      | Short Form |
+|-------------------+------------|
+| set-option        | set        |
+| set-window-option | setw       |
+| bind-key          | bind       |
+| unbind-key        | unbind     |
+| display-message   | display    |
+| run-shell         | run        |
+| if-shell          | if         |
+
+
+| Variable Name | Alias         | Replaced With                             |
+|---------------+---------------+-------------------------------------------|
+|               | #(command)    | First line of command’s output            |
+|               | #[attributes] | Color or attribute change                 |
+| host          | #H            | Hostname of local host                    |
+| host_short    | #h            | Hostname of local host (no domain name)   |
+| pane_id       | #D            | Unique pane ID                            |
+| pane_index    | #P            | Index of pane                             |
+| pane_path     | #T            | Path of pane (can be set by application)  |
+| pane_title    | #T            | Title of pane (can be set by application) |
+| session_name  | #S            | Name of session                           |
+| window_flags  | #F            | Window flags                              |
+| window_index  | #I            | Index of window                           |
+| window_name   | #W            | Name of window                            |
+|               | ##            | A literal ‘#’                             |
+
