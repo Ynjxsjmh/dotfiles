@@ -1,5 +1,6 @@
 [global_config]
 [keybindings]
+  layout_launcher = None
 [profiles]
   [[default]]
     background_color = "#fdf6e3"
