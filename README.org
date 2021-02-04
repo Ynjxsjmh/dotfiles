@@ -35,6 +35,23 @@ $ sudo wget https://raw.githubusercontent.com/zsh-users/antigen/v2.2.3/bin/antig
 $ yay -S antigen-git
 #+END_SRC
 
+ZSH loads the following files in order.
+=$ZDOTDIR= is used instead of =$HOME= if set.
+
+1. /etc/zsh/zshenv (always)
+If NO_RCS is set, none of the following are run.
+2. [@2] ~/.zshenv (Usually run for all shells)
+3. /etc/zsh/zprofile (login)
+4. ~/.zprofile (login)
+5. /etc/zsh/zshrc (interactive)
+6. ~/.zshrc (interactive)
+7. /etc/zsh/zlogin (login)
+8. ~/.zlogin (login)
+
+If a login shell, the following are run on logout or exit.
+- ~/.zlogout
+- /etc/zlogout
+
 * stow -t /etc etc
 
 =pacman.conf= - pacman package manager configuration file.
