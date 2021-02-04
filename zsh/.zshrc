@@ -5,14 +5,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+# History
+HISTFILE=${ZDOTDIR:-${HOME}}/.histfile
+# The maximum number of events stored in the internal history list.
+HISTSIZE=10000
+# The maximum number of history events to save in the history file.
+SAVEHIST=50000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
+zstyle :compinstall filename '${ZDOTDIR}/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -23,9 +25,11 @@ compinit
 source /usr/share/zsh/share/antigen.zsh
 
 # Load Antigen configurations
-antigen init ~/.antigenrc
+antigen init ${ZDOTDIR}/.antigenrc
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ${ZDOTDIR}/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
 
-source ~/.bash_alias.sh
+source "${ZDOTDIR}/aliases.zsh"
+source "${ZDOTDIR}/distro-debian.zsh"
+source "${ZDOTDIR}/distro-arch.zsh"
