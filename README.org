@@ -25,6 +25,7 @@
 
 * stow config
 ** tmux
+*** Simple Guide
 
 [[https://github.com/tmux/tmux][tmux]] documentation can be found at [[https://github.com/tmux/tmux/wiki][Wiki · tmux/tmux]]. For a local one, you can refer to =man 1 tmux.= Here lists some useful information:
 
@@ -54,6 +55,22 @@
 | window_index  | #I            | Index of window                           |
 | window_name   | #W            | Name of window                            |
 |               | ##            | A literal ‘#’                             |
+
+*** Introduction
+
+This setting remaps prefix key to =`= by =set-option -g prefix `=. After you are familiar with this binding, if you are on a remote box, you can simply do a =c-b := and type it.
+
+- =M-hjkl= selects panes with vi movement commands.
+- =M-HL= selects windows with vi movement commands.
+- [[https://github.com/tmux/tmux/issues/674][C-S-[letter] is same with C-[letter]​]].
+
+- M-✥  : doesn't respond
+- S-✥  : ⇄: move pane to   window
+- M-S-✥: ⇄: move pane from window
+- C-M-✥: swap panes
+- C-✥  : small pane size
+- C-S-✥: large pane size
+- C-M-S-✥: unbind yet
 
 ** zsh
 
