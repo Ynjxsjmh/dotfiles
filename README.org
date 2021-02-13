@@ -87,3 +87,9 @@ If a login shell, the following are run on logout or exit.
 | window_name   | #W            | Name of window                            |
 |               | ##            | A literal ‘#’                             |
 
+* stow bash
+
+=.profile= sets =OS_TYPE= and =DISTRO_TYPE=.
+
+=.zshenv= sets zsh configuration place. However, you can set it in =.pam.environment= if you like.
+
