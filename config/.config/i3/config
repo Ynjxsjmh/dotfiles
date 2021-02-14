@@ -70,6 +70,10 @@ bindsym $mod+Down  focus down
 bindsym $mod+Up    focus up
 bindsym $mod+Right focus right
 
+# moreover, use the tab key
+bindsym $mod+Tab       focus right
+bindsym $mod+Shift+Tab focus left
+
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
