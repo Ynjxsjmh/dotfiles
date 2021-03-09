@@ -21,7 +21,7 @@
 
 =.profile= sets =OS_TYPE= and =DISTRO_TYPE=.
 
-=.zshenv= sets zsh configuration place. However, you can set it in =.pam.environment= if you like.
+=.zshenv= sets zsh configuration place. However, you can set it in =.pam.environment= if you like (According to [[https://github.com/linux-pam/linux-pam/commit/ecd526743a27157c5210b0ce9867c43a2fa27784][linux-pam/linux-pam@ecd5267]], Reading =~/.pam_environment= is deprecated and the feature will be removed at some point in the future.).
 
 If you already have =.profile= in home directory, =stow bash= will fail. Remove the original =.profile= or use =--adopt= option.
 
