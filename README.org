@@ -23,6 +23,8 @@
 
 =.zshenv= sets zsh configuration place. However, you can set it in =.pam.environment= if you like.
 
+If you already have =.profile= in home directory, =stow bash= will fail. Remove the original =.profile= or use =--adopt= option.
+
 * stow config
 ** i3
 
