@@ -181,6 +181,24 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+set $mode_exec (d)olphin, (e)macs, (f)lameshot, (h)top, (t)mux
+mode "$mode_exec" {
+    bindsym d exec dolphin, mode "default"
+    bindsym e exec emacs, mode "default"
+    bindsym f exec flameshot gui, mode "default"
+    bindsym h exec $term -e "htop", mode "default"
+    bindsym t exec $term -e "tmux", mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym Ctrl+g mode "default"
+}
+
+bindsym $mod+o mode "$mode_exec"
+
+
 # i3bar
 #bar {
 #    verbose yes
