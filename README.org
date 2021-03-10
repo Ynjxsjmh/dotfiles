@@ -60,6 +60,15 @@ Some tools you must install:
 
 To use another window manager with plasma, you can refer to [[https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma][Tutorials/Using Other Window Managers with Plasma - KDE UserBase Wiki]]. To use i3 as WM, you can refer to /u/shinyeye4's [[https://www.reddit.com/r/unixporn/comments/64mihc/i3_kde_plasma_a_match_made_in_heaven/dg4k0wq?utm_source=share&utm_medium=web2x&context=3][comment]] and config [[https://github.com/avivace/dotfiles#i3--plasma-integration][i3 + Plasma]].
 
+** terminator
+
+Documentation for all of Terminator's keybindings and config options in man pages is included in the source/packages. See:
+
+#+BEGIN_SRC bash
+man terminator
+man terminator_config
+#+END_SRC
+
 ** tmux
 *** Simple Guide
 
