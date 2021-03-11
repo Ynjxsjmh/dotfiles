@@ -51,6 +51,8 @@ Other key bindings keep same with the [[https://github.com/i3/i3/blob/next/etc/c
   - =f= toggle fullscreen
   - =Q= kill window (does normal close if application supports it)
 
+To memorize i3’s shortcuts, you can have a look at [[https://i3wm.org/docs/refcard.html][i3 - Reference Card]]. To debug i3, [[https://i3wm.org/docs/debugging.html][i3: Debugging i3: How To]] is a getting started article.
+
 If you want to bind some symbol keys but don't know what they're called. You can run =xev= (=xev -event keyboard= if you only care for key presses) from a terminal and press your desired key. =xev= should output information about the events it got from X11.
 
 Some tools you must install:
