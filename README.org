@@ -159,3 +159,7 @@ If a login shell, the following are run on logout or exit.
 - /etc/zlogout
 
 
+* themes
+
+- Telegram Desktop: =WindowBg= to =#f5f2ee=.
+- KDE theme: Appearance -> Colors -> Genshin from CSSlayer
