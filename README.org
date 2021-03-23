@@ -119,6 +119,22 @@ This setting remaps prefix key to =`= by =set-option -g prefix `=. After you are
 - C-S-✥: large pane size
 - C-M-S-✥: unbind yet
 
+*** Possible Error
+
+If you have a different version of tmux, you may get some errors. For example, with tmux 2.6, you may get
+
+#+BEGIN_SRC bash
+~/.config/tmux/.tmux.conf:56: invalid or unknown command: unbind \"
+~/.config/tmux/.tmux.conf:57: unknown key: \\
+#+END_SRC
+
+To fix these, you could either upgrade the tmux or just adjust the syntax to version 2.6 by checking =tmux list-keys=
+
+#+BEGIN_SRC bash
+unbind '"'
+bind \ split-window -h
+#+END_SRC
+
 ** zsh
 
 Download zsh
