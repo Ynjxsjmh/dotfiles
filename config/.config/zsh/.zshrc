@@ -33,6 +33,3 @@ antigen init ${ZDOTDIR}/.antigenrc
 source "${ZDOTDIR}/aliases.zsh"
 source "${ZDOTDIR}/distro-debian.zsh"
 source "${ZDOTDIR}/distro-arch.zsh"
-
-
-eval "$(zoxide init zsh)"
