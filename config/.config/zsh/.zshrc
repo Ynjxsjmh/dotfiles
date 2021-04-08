@@ -22,7 +22,7 @@ compinit
 
 
 # Load Antigen
-source /usr/share/zsh/share/antigen.zsh
+source ~/.antigen/antigen.zsh
 
 # Load Antigen configurations
 antigen init ${ZDOTDIR}/.antigenrc
