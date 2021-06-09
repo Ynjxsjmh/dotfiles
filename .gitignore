@@ -2,3 +2,4 @@
 *.html
 .histfile
 .zcompdump
+*.zwc
