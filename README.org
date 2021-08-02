@@ -174,7 +174,6 @@ If a login shell, the following are run on logout or exit.
 - ~/.zlogout
 - /etc/zlogout
 
-
 * themes
 
 - Telegram Desktop: =WindowBg= to =#f5f2ee=.
