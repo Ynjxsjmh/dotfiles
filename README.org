@@ -109,7 +109,7 @@ This setting remaps prefix key to =`= by =set-option -g prefix `=. After you are
 
 - =M-hjkl= selects panes with vi movement commands.
 - =M-HL= selects windows with vi movement commands.
-- [[https://github.com/tmux/tmux/issues/674][C-S-\[letter\] is same with C-\[letter\]​]].
+- [[https://github.com/tmux/tmux/issues/674][C-S-letter is same with C-letter]].
 
 - M-✥  : doesn't respond
 - S-✥  : ⇄: move pane to   window
