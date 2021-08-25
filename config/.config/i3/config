@@ -244,9 +244,9 @@ bindsym $mod+z mode "$mode_system"
 # Applications behaving as "pop ups" are set to be always floating
 #  i.e. popup, do stuff, close
 # To get WM_CLASS and WM_TITLE values, on X run "xprop"
-for_window [class="yakuake"] floating enable
+for_window [class="yakuake"]        floating enable
 for_window [class="systemsettings"] floating enable
-for_window [class="keepassxc"] floating enable
+for_window [class="keepassxc"]      floating enable
 
 # Set wallpaper with feh
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper/wallpaper.jpg
