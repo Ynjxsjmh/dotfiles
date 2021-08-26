@@ -50,6 +50,7 @@ bindsym $mod+x move workspace to output right
 
 # rofi
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu -font "Inter 17" '
+bindsym $mod+slash exec rofi -show window -font "Inter 17"
 
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -85,8 +86,6 @@ bindsym $mod+Shift+Left  move left
 bindsym $mod+Shift+Down  move down
 bindsym $mod+Shift+Up    move up
 bindsym $mod+Shift+Right move right
-
-# bindsym $mod+space exec rofi -show run
 
 # split in horizontal orientation
 bindsym $mod+minus split v
