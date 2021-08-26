@@ -42,7 +42,12 @@ Other key bindings keep same with the [[https://github.com/i3/i3/blob/next/etc/c
   - =E= exit i3
   - =C= reload config file
   - =R= restart i3 in place
-  - =r= resize mode (~<Esc>~ or ~<Enter>~ to leave resize mode)
+
+- *Mode* (~<Esc>~ or ~<Enter>~ to back to normal mode)
+  - =r= resize mode
+  - =o= execution mode
+  - =z= system mode
+  - =G= gaps mode
 
 - *Window*
   - =s= stacked layout
