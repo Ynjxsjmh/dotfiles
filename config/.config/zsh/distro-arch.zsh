@@ -6,7 +6,6 @@ if ! is-distro-arch; then
 fi
 
 alias S='sudo pacman -S'
-alias Ss='pacman -Ss'
 alias Syu='sudo pacman -Syu'
 alias Syyu='sudo pacman -Syyu'
 
