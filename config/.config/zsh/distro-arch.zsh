@@ -18,16 +18,15 @@ alias Ss='pacman -Ss'
 alias Qs='pacman -Qs'
 alias Qi='pacman -Qi'
 
-# To remove a package and its dependencies which are not required by
-# any other installed package:
-# `pacman -Rs package_name`
-
-# The above(-Rs) may sometimes refuse to run when removing a
-# group which contains otherwise needed packages. In this case try:
+# Removing packages
+#   -Rs:  To remove a package and its dependencies which are not
+#         required by any other installed package.
+#   -Rsu: The above(-Rs) may sometimes refuse to run when removing a
+#         group which contains otherwise needed packages.
+#   -n:   To prevent the creation of these backup files.
+#         Pacman saves important configuration files when removing
+#         certain applications and names them with the extension: `.pacsave`.
 alias Ru='pacman -Rsu'
-# Pacman saves important configuration files when removing certain
-# applications and names them with the extension: `.pacsave`.
-# To prevent the creation of these backup files use the `-n` option:
 alias Rn='pacman -Rsn'
 
 alias yS='yay -S'
