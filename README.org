@@ -124,6 +124,42 @@ This setting remaps prefix key to =`= by =set-option -g prefix `=. After you are
 - C-S-✥: large pane size
 - C-M-S-✥: unbind yet
 
+*** Tmux Plugin Manager
+
+I'm using [[https://github.com/tmux-plugins/tpm][TPM]] to manage tmux plugins. To use it, you need to clone TPM first:
+
+#+BEGIN_SRC bash
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#+END_SRC
+
+Then reload TMUX environment to make sure TPM is sourced:
+
+#+BEGIN_SRC bash
+# type this in terminal if tmux is already running
+$ tmux source ~/.config/tmux/.tmux.conf
+#+END_SRC
+
+To install a plugin, you need to do the following steps:
+
+1. Add new plugin to =~/.tmux.conf= with =set -g @plugin '...'=
+2. Press =prefix + I= (capital i, as in *I*nstall) to fetch the plugin.
+
+If you want to manage plugins via the command line, you can add the following config to =.tmux.conf=:
+
+#+BEGIN_SRC bash
+$ set-environment -g TMUX_PLUGIN_MANAGER_PATH '~/.tmux/plugins/'
+#+END_SRC
+
+Then run the following command in terminal:
+
+#+BEGIN_SRC bash
+$ ~/.tmux/plugins/tpm/bin/install_plugins
+#+END_SRC
+
+See [[https://github.com/tmux-plugins/tpm/blob/master/docs/managing_plugins_via_cmd_line.md][Managing plugins via the command line · tmux-plugins/tpm]] for more detail.
+
+If you are suffering from network problem, such as couldn't perform git clone, you can edit the =clone_plugin()= function in =~/.tmux/plugins/tpm/scripts/install_plugins.sh=.
+
 *** Possible Error
 
 If you have a different version of tmux, you may get some errors. For example, with tmux 2.6, you may get
