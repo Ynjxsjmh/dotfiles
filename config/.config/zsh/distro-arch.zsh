@@ -26,7 +26,7 @@ alias Qi='pacman -Qi'
 #   -n:   To prevent the creation of these backup files.
 #         Pacman saves important configuration files when removing
 #         certain applications and names them with the extension: `.pacsave`.
-alias Ru='pacman -Rsu'
-alias Rn='pacman -Rsn'
+alias Ru='sudo pacman -Rsu'
+alias Rn='sudo pacman -Rsn'
 
 alias yS='yay -S'
