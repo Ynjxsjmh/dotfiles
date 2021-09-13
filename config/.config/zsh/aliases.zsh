@@ -22,4 +22,8 @@ alias ..5="cd ../../../../.."
 
 alias battery='upower -i $(upower -e | grep "BAT") | grep -E "state|to\ full|to\ empty|percentage"'
 
+unalias gl
+alias gl='git log --pretty="%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s" --date-order --graph --date=iso'
+alias gla='git log --pretty="%C(cyan)%ad %C(red)%aN %C(yellow)%h %C(cyan)%d %Creset%s" --date-order --graph --date=iso'
+
 alias tmux='tmux -f $HOME/.config/tmux/.tmux.conf'
