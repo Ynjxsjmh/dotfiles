@@ -30,6 +30,8 @@ GRUB_GFXMODE=auto
 # Uncomment to allow the kernel use the same resolution used by grub
 GRUB_GFXPAYLOAD_LINUX=keep
 
+GRUB_DISABLE_OS_PROBER=false
+
 # Uncomment if you want GRUB to pass to the Linux kernel the old parameter
 # format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx"
 #GRUB_DISABLE_LINUX_UUID=true
