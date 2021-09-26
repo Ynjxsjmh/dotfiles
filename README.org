@@ -142,7 +142,8 @@ $ tmux source ~/.config/tmux/.tmux.conf
 To install a plugin, you need to do the following steps:
 
 1. Add new plugin to =~/.tmux.conf= with =set -g @plugin '...'=
-2. Press =prefix + I= (capital i, as in *I*nstall) to fetch the plugin.
+2. Reload TMUX environment so TPM is sourced: =$ tmux source ~/.config/tmux/.tmux.conf=
+3. Press =prefix + I= (capital i, as in *I*nstall) to fetch the plugin.
 
 If you want to manage plugins via the command line, you can add the following config to =.tmux.conf=:
 
