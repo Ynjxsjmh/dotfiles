@@ -73,9 +73,9 @@ To use another window manager with plasma, you can refer to [[https://userbase.k
 
 If you use i3wm, you probably cannot stand the title bar in tabbed/stacking mode while using polybar. Luckily, there are many third party libraries that help displaying window titles directly in polybar (Remember make script executable with ~chmod +x~):
 
-- [[https://github.com/meelkor/polybar-i3-windows][meelkor/polybar-i3-windows]]. Python script that shows application icon and window titles of all workspaces.
-- [[https://github.com/tam-carre/polywins][tam-carre/polywins]]. Shell script that shows window title of current workspace.
-- [[https://github.com/aroma1994/polybar-windows][aroma1994/polybar-windows]]. Shell script that shows window title of current workspace.
+- [[https://github.com/meelkor/polybar-i3-windows][meelkor/polybar-i3-windows]]. Python script that shows application icon and window titles of all workspaces. Title order changes with window movement.
+- [[https://github.com/tam-carre/polywins][tam-carre/polywins]]. Shell script that shows window title of current workspace. Title order doesn't change with window movement in same workspace unless reload i3 config.
+- [[https://github.com/aroma1994/polybar-windows][aroma1994/polybar-windows]]. Shell script that shows window title of current workspace. Title order doesn't change with window movement in same workspace unless reload i3 config. Have some bugs highlighting current focused window.
 - [[https://github.com/folke/polydock][folke/polydock]]
 - [[https://github.com/melangue/bspwm-window-titles][melangue/bspwm-window-titles]]
 
