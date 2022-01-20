@@ -71,6 +71,36 @@ To use another window manager with plasma, you can refer to [[https://userbase.k
 
 ** polybar
 
+To make the bar fancy, most configurations are highly dependent on extra icons, so make sure you install one of [[https://github.com/polybar/polybar/wiki/Fonts#icon-fonts][popular icon fonts]].
+
+The config syntax of polybar mainly contains two parts: /bar/ and /module/, remains are mainly customized variables or module specific keys. For example, following defines a bar named =mybar= which contains only one module called =mymodule= at the center of =mybar=:
+
+#+BEGIN_SRC
+[bar/mybar]
+modules-center = mymodule
+
+[module/mymodule]
+str = My Module
+#+END_SRC
+
+The following is a very basic polybar configuration of real which defines a bar named =mybar= with a module called =date=:
+
+#+BEGIN_SRC
+[bar/mybar]
+modules-right = date
+
+[module/date]
+type = internal/date
+date = %Y-%m-%d%
+#+END_SRC
+
+In a word, configuring polybar is just to config each module and place them according to your desired order in bar. By default polybar also installs a sample configuration with many preconfigured modules in =/usr/share/doc/polybar/config=. Also, [[https://github.com/jaagr/dots/tree/master/.config/polybar/testing][jaagr/dots]] lists examples of possible module by polybar author .
+
+Where to find other configurations?
+
+- [[https://forum.archlabslinux.com/t/show-us-your-polybar/159/1][Show Us Your Polybar - ArchLabs Linux]]
+- [[https://github.com/adi1090x/polybar-themes][adi1090x/polybar-themes]]
+
 If you use i3wm, you probably cannot stand the title bar in tabbed/stacking mode while using polybar. Luckily, there are many third party libraries that help displaying window titles directly in polybar (Remember make script executable with ~chmod +x~):
 
 - [[https://github.com/meelkor/polybar-i3-windows][meelkor/polybar-i3-windows]]. Python script that shows application icon and window titles of all workspaces. Title order changes with window movement.
