@@ -21,3 +21,37 @@
 ; * script
 
 
+; date
+;
+; This module shows information about the current date.
+;
+; Doc
+; ---
+; https://github.com/jaagr/polybar/wiki/Module:-date
+;
+; Basic settings
+; --------------
+; interval: default 1.0
+;   Seconds to sleep between updates
+; date:
+;   See "https://en.cppreference.com/w/cpp/io/manip/put_time" for
+;   details on how to format the date string
+;
+;   NOTE: if you want to use syntax tags here you need to use %%{...}
+; time:
+;   Optional time format
+; date-alt:
+; time-alt:
+;   If `date-alt` or `time-alt` is defined, clicking the module will
+;   toggle between formats
+;
+; Additional formatting
+; ---------------------
+; format:
+;   Available tags:
+;     <label> (default)
+; label:
+;   Available tokens:
+;     %date%
+;     %time%
+;   Default: %date%
