@@ -83,7 +83,7 @@ modules-center = mymodule
 str = My Module
 #+END_SRC
 
-The following is a very basic polybar configuration of real which defines a bar named =mybar= with a module called =date=:
+Each module actually should have a =type= filed, you can click to view all of them in section /Modules/ of [[https://github.com/polybar/polybar/wiki][polybar/polybar Wiki]]. The following is a very basic polybar configuration of real which defines a bar named =mybar= with a module called =date=:
 
 #+BEGIN_SRC
 [bar/mybar]
