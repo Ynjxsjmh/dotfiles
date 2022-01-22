@@ -176,3 +176,104 @@
 ;     %date%
 ;     %time%
 ;   Default: %date%
+
+
+; i3
+;
+; This module uses the i3 ipc to display information about workspaces
+; and active mode.
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-i3
+;
+; Basic settings
+; --------------
+; pin-workspaces: default false
+;   Only show workspaces defined on the same output as the bar
+;
+;   Useful if you want to show monitor specific workspaces
+;   on different bars
+; strip-wsnumbers: default false
+;   This will split the workspace name on ':'
+; index-sort: default false
+;   Sort the workspaces by index instead of the default
+;   sorting that groups the workspaces by output
+; enable-click: default true
+;   Create click handler used to focus workspace
+; enable-scroll: default true
+;   Create scroll handlers used to cycle workspaces
+; wrapping-scroll: default true
+;   Wrap around when reaching the first/last workspace
+; reverse-scroll: default true
+;   Set the scroll cycle direction
+; fuzzy-match: default false
+;   Use fuzzy (partial) matching on labels when assigning
+;   icons to workspaces
+;
+;   Example: code;♚ will apply the icon to all workspaces
+;   containing 'code' in the label
+;
+; Additional formatting
+; ---------------------
+; ws-icon-n:
+; ws-icon-default:
+;   ws-icon-[0-9]+ = <label>;<icon>
+;
+;   NOTE: The <label> needs to match the name of the i3 workspace
+;   Neither <label> nor <icon> can contain a semicolon (;)
+;
+;   NOTE: You cannot skip icons, e.g. to get a ws-icon-6
+;   you must also define a ws-icon-5.
+;
+;   NOTE: Icon will be available as the %icon% token inside label-*
+;
+;   See doc for how to Generate ws-icon list
+; format:
+;   Available tags:
+;     <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+;     <label-mode> (default)
+; label-mode:
+;   Available tokens:
+;     %mode% (default)
+; label-mode-padding:
+; label-mode-background:
+; label-focused: default %icon% %name%
+;   Available tokens:
+;     %name%
+;     %icon%
+;     %index%
+;     %output%
+; label-focused-foreground:
+; label-focused-background:
+; label-focused-underline:
+; label-focused-padding:
+; label-unfocused: default %icon% %name%
+;   Available tokens:
+;     %name%
+;     %icon%
+;     %index%
+;     %output%
+; label-unfocused-padding:
+; label-visible: default %icon% %name%
+;   Available tokens:
+;     %name%
+;     %icon%
+;     %index%
+;     %output%
+; label-visible-underline:
+; label-visible-padding:
+; label-urgent: default %icon% %name%
+;   Available tokens:
+;     %name%
+;     %icon%
+;     %index%
+;     %output%
+; label-urgent-foreground:
+; label-urgent-background:
+; label-urgent-padding:
+; label-separator:
+;   Separator in between workspaces
+; label-separator-padding:
+; label-separator-foreground:
+
