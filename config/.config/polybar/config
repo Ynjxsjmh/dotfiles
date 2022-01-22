@@ -277,3 +277,73 @@
 ; label-separator-padding:
 ; label-separator-foreground:
 
+
+; network
+;
+; This module shows information about the specified network interface.
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-network
+;
+; Basic settings
+; --------------
+; interface:
+;   Name of the network interface to display. You can get the names of the
+;   interfaces on your machine with `ip link`
+;   Wireless interfaces often start with `wl` and ethernet interface with `eno` or `eth`
+; interval: default 1
+;   Seconds to sleep between updates
+; ping-interval: default 0
+;   Test connectivity every Nth update
+;   A value of 0 disables the feature
+;
+;   NOTE: Experimental (needs more testing)
+; udspeed-minwidth: default 3
+;   @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+;   Minimum output width of upload/download rate
+; accumulate-stats: default false
+;   Accumulate values from all interfaces
+;   when querying for up/downspeed rate
+; unknown-as-up: default false
+;   Consider an `UNKNOWN` interface state as up.
+;   Some devices like USB network adapters have an unknown state, even when they're running
+;
+; Additional formatting
+; ---------------------
+; format-connected:
+;   Available tags:
+;     <label-connected> (default)
+;     <ramp-signal>
+; format-disconnected:
+;   Available tags:
+;     <label-disconnected> (default)
+; format-packetloss:
+;   Available tags:
+;     <label-connected> (default)
+;     <label-packetloss>
+;     <animation-packetloss>
+; label-connected: default %ifname% %local_ip%
+;   All labels support the following tokens:
+;     %ifname%    [wireless+wired]
+;     %local_ip%  [wireless+wired]
+;     %local_ip6% [wireless+wired]
+;     %essid%     [wireless]
+;     %signal%    [wireless]
+;     %upspeed%   [wireless+wired]
+;     %downspeed% [wireless+wired]
+;     %linkspeed% [wired]
+; label-connected-foreground:
+; label-disconnected:
+;   Default: (none)
+; label-disconnected-foreground:
+; label-packetloss
+;   Default: (none)
+; label-packetloss-foreground:
+; ramp-signal-n:
+;   Only applies if <ramp-signal> is used
+; animation-packetloss-n:
+;   Only applies if <animation-packetloss> is used
+; animation-packetloss-n-foreground:
+; animation-packetloss-framerate:
+;   Framerate in milliseconds
