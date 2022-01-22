@@ -393,3 +393,55 @@
 ; click-right:
 ; click-middle:
 ;   Right and Middle click
+
+
+; script
+;
+; This module executes the defined script and displays its output.
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-script
+;
+; Basic settings
+; --------------
+; exec:
+;   Available tokens:
+;     %counter%
+;   Command to be executed (using "/bin/sh -c [command]")
+; exec-if: default ""
+;   Conditional command that, if defined, needs to exit successfully
+;   before the main exec command is invoked.
+; tail: default false
+;   Will the script output continous content?
+; interval: default 5 (0 if `tail = true`)
+;   Seconds to sleep between updates
+;
+; Additional formatting
+; ---------------------
+; format:
+;   Available tags:
+;     <output> - deprecated
+;     <label> (default)
+; format-background.
+; format-foreground.
+; format-padding.
+; label: default %output%
+;   Available tokens:
+;     %output%
+; click-left:
+; click-middle:
+; click-right:
+; double-click-left:
+; double-click-middle:
+; double-click-right:
+;   Available tokens:
+;     %counter%
+;     %pid%
+;   "click-(left|middle|right)" will be executed using "/bin/sh -c [command]"
+; scroll-up:
+; scroll-down:
+;   Available tokens:
+;     %counter%
+;     %pid%
+;   "scroll-(up|down)" will be executed using "/bin/sh -c [command]"
