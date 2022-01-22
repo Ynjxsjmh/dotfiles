@@ -64,6 +64,84 @@
 ;   Only applies if <bar> is used
 
 
+; battery
+;
+; This module shows information about the battery.
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-battery
+;
+; Basic settings
+; --------------
+; full-at:
+;   This is useful in case the battery never reports 100% charge
+; battery:
+; adapter:
+;   Use the following command to list batteries and adapters:
+;   $ ls -1 /sys/class/power_supply/
+; poll-interval: default 5.
+;   If an inotify event haven't been reported in this many
+;   seconds, manually poll for new values.
+;
+;   Needed as a fallback for systems that don't report events
+;   on sysfs/procfs.
+;
+;   Disable polling by setting the interval to 0.
+;
+; Additional formatting
+; ---------------------
+; time-format: default %H:%M:%S
+;   see "man date" for details on how to format the time string
+;
+;   NOTE: if you want to use syntax tags here you need to use %%{...}
+; format-charging:
+;   Available tags:
+;     <label-charging> (default)
+;     <bar-capacity>
+;     <ramp-capacity>
+;     <animation-charging>
+; format-discharging:
+;   Available tags:
+;     <label-discharging> (default)
+;     <bar-capacity>
+;     <ramp-capacity>
+;     <animation-discharging>
+; format-full:
+;   Available tags:
+;     <label-full> (default)
+;     <bar-capacity>
+;     <ramp-capacity>
+; label-charging:
+;   Available tokens:
+;     %percentage% (default) - is set to 100 if full-at is reached
+;     %percentage_raw%
+;     %time%
+;     %consumption% (shows current charge rate in watts)
+; label-discharging:
+;   Available tokens:
+;     %percentage% (default) - is set to 100 if full-at is reached
+;     %percentage_raw%
+;     %time%
+;     %consumption% (shows current discharge rate in watts)
+; label-full:
+;   Available tokens:
+;     %percentage% (default) - is set to 100 if full-at is reached
+;     %percentage_raw%
+; ramp-capacity-n:
+;   Only applies if <ramp-capacity> is used
+; bar-capacity-width:
+;   Only applies if <bar-capacity> is used
+; animation-charging-n:
+;   Only applies if <animation-charging> is used
+; animation-charging-framerate:
+;   Framerate in milliseconds
+; animation-discharging-n:
+;   Only applies if <animation-discharging> is used
+; animation-discharging-framerate:
+;   Framerate in milliseconds
+
+
 ; date
 ;
 ; This module shows information about the current date.
