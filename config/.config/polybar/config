@@ -347,3 +347,49 @@
 ; animation-packetloss-n-foreground:
 ; animation-packetloss-framerate:
 ;   Framerate in milliseconds
+
+
+; pulseaudio
+;
+; This module shows volume and mute state for Pulseaudio.
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-pulseaudio
+;
+; Basic settings
+; --------------
+; sink:
+;   Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+;   If not, uses default sink
+; use-ui-max: default true
+;   Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; interval: default 5
+;   Interval for volume increase/decrease (in percent points)
+;
+; Additional formatting
+; ---------------------
+; format-volume:
+;   Available tags:
+;     <label-volume> (default)
+;     <ramp-volume>
+;     <bar-volume>
+; format-muted:
+;   Available tags:
+;     <label-muted> (default)
+;     <ramp-volume>
+;     <bar-volume>
+; label-volume:
+;   Available tokens:
+;     %percentage% (default)
+;     %decibels%
+; label-muted:
+;   Available tokens:
+;     %percentage% (default)
+;     %decibels%
+; label-muted-foreground:
+; ramp-volume-n:
+;   Only applies if <ramp-volume> is used
+; click-right:
+; click-middle:
+;   Right and Middle click
