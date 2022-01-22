@@ -13,7 +13,6 @@
 ;
 ; * backlight
 ; * battery
-; * cpu
 ; * date
 ; * i3
 ; * network
@@ -58,9 +57,12 @@
 ; label:
 ;   Available tokens:
 ;     %percentage% (default)
-; ramp-n:
+; ramp-n: n ∈ [0, 4]
 ;   Only applies if <ramp> is used
-; bar-x:
+; bar-width:
+; bar-indicator:
+; bar-fill:
+; bar-empty:
 ;   Only applies if <bar> is used
 
 
@@ -80,7 +82,7 @@
 ; adapter:
 ;   Use the following command to list batteries and adapters:
 ;   $ ls -1 /sys/class/power_supply/
-; poll-interval: default 5.
+; poll-interval: default 5
 ;   If an inotify event haven't been reported in this many
 ;   seconds, manually poll for new values.
 ;
@@ -128,15 +130,15 @@
 ;   Available tokens:
 ;     %percentage% (default) - is set to 100 if full-at is reached
 ;     %percentage_raw%
-; ramp-capacity-n:
+; ramp-capacity-n: n ∈ [0, 4]
 ;   Only applies if <ramp-capacity> is used
 ; bar-capacity-width:
 ;   Only applies if <bar-capacity> is used
-; animation-charging-n:
+; animation-charging-n: n ∈ [0, 4]
 ;   Only applies if <animation-charging> is used
 ; animation-charging-framerate:
 ;   Framerate in milliseconds
-; animation-discharging-n:
+; animation-discharging-n: n ∈ [0, 4]
 ;   Only applies if <animation-discharging> is used
 ; animation-discharging-framerate:
 ;   Framerate in milliseconds
@@ -173,9 +175,8 @@
 ;     <label> (default)
 ; label:
 ;   Available tokens:
-;     %date%
+;     %date% (default)
 ;     %time%
-;   Default: %date%
 
 
 ; i3
@@ -216,7 +217,7 @@
 ;
 ; Additional formatting
 ; ---------------------
-; ws-icon-n:
+; ws-icon-n: n ∈ [0, 9]
 ; ws-icon-default:
 ;   ws-icon-[0-9]+ = <label>;<icon>
 ;
@@ -236,46 +237,46 @@
 ; label-mode:
 ;   Available tokens:
 ;     %mode% (default)
-; label-mode-padding:
-; label-mode-background:
+; label-mode-padding.
+; label-mode-background.
 ; label-focused: default %icon% %name%
 ;   Available tokens:
 ;     %name%
 ;     %icon%
 ;     %index%
 ;     %output%
-; label-focused-foreground:
-; label-focused-background:
-; label-focused-underline:
-; label-focused-padding:
+; label-focused-foreground.
+; label-focused-background.
+; label-focused-underline.
+; label-focused-padding.
 ; label-unfocused: default %icon% %name%
 ;   Available tokens:
 ;     %name%
 ;     %icon%
 ;     %index%
 ;     %output%
-; label-unfocused-padding:
+; label-unfocused-padding.
 ; label-visible: default %icon% %name%
 ;   Available tokens:
 ;     %name%
 ;     %icon%
 ;     %index%
 ;     %output%
-; label-visible-underline:
-; label-visible-padding:
+; label-visible-underline.
+; label-visible-padding.
 ; label-urgent: default %icon% %name%
 ;   Available tokens:
 ;     %name%
 ;     %icon%
 ;     %index%
 ;     %output%
-; label-urgent-foreground:
-; label-urgent-background:
-; label-urgent-padding:
+; label-urgent-foreground.
+; label-urgent-background.
+; label-urgent-padding.
 ; label-separator:
 ;   Separator in between workspaces
-; label-separator-padding:
-; label-separator-foreground:
+; label-separator-padding.
+; label-separator-foreground.
 
 
 ; network
@@ -333,18 +334,18 @@
 ;     %upspeed%   [wireless+wired]
 ;     %downspeed% [wireless+wired]
 ;     %linkspeed% [wired]
-; label-connected-foreground:
+; label-connected-foreground.
 ; label-disconnected:
 ;   Default: (none)
-; label-disconnected-foreground:
-; label-packetloss
+; label-disconnected-foreground.
+; label-packetloss:
 ;   Default: (none)
-; label-packetloss-foreground:
-; ramp-signal-n:
+; label-packetloss-foreground.
+; ramp-signal-n: n ∈ [0, 5]
 ;   Only applies if <ramp-signal> is used
-; animation-packetloss-n:
+; animation-packetloss-n: n ∈ [0, 1]
 ;   Only applies if <animation-packetloss> is used
-; animation-packetloss-n-foreground:
+; animation-packetloss-n-foreground.
 ; animation-packetloss-framerate:
 ;   Framerate in milliseconds
 
@@ -387,8 +388,8 @@
 ;   Available tokens:
 ;     %percentage% (default)
 ;     %decibels%
-; label-muted-foreground:
-; ramp-volume-n:
+; label-muted-foreground.
+; ramp-volume-n: n ∈ [0, 2]
 ;   Only applies if <ramp-volume> is used
 ; click-right:
 ; click-middle:
