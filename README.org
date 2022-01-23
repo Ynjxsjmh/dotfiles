@@ -71,14 +71,6 @@ To use another window manager with plasma, you can refer to [[https://userbase.k
 
 ** polybar
 
-To make the bar fancy, most configurations are highly dependent on extra icons, so make sure you install one of [[https://github.com/polybar/polybar/wiki/Fonts#icon-fonts][popular icon fonts]]. If you want try something new, you can go to the cheatsheet page for easier search:
-
-- [[https://www.nerdfonts.com/cheat-sheet][Nerd Fonts Cheatsheet]]. Except patched fonts listed in assets, there is also other third-party patched font such as [[https://github.com/laishulu/Sarasa-Mono-SC-Nerd][laishulu/Sarasa-Mono-SC-Nerd]], [[https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts][jonz94/Sarasa-Gothic-Nerd-Fonts]].
-- [[https://fontawesome.com/v5/cheatsheet/free/][FontAwesome Cheatsheet]]
-- [[https://fonts.google.com/icons][Material icons Cheetsheet]]
-- [[https://feathericons.com/][Feather Icons]]
-- [[https://oblador.github.io/react-native-vector-icons/][react-native-vector-icons]]
-
 The config syntax of polybar mainly contains two parts: /bar/ and /module/, remains are mainly customized variables or module specific keys. For example, following defines a bar named =mybar= which contains only one module called =mymodule= at the center of =mybar=:
 
 #+BEGIN_SRC
@@ -106,6 +98,7 @@ Where to find other configurations?
 
 - [[https://forum.archlabslinux.com/t/show-us-your-polybar/159/1][Show Us Your Polybar - ArchLabs Linux]]
 - [[https://github.com/adi1090x/polybar-themes][adi1090x/polybar-themes]]
+- [[https://github.com/Murzchnvok/polybar-collection][Murzchnvok/polybar-collection]]
 
 If you use i3wm, you probably cannot stand the title bar in tabbed/stacking mode while using polybar. Luckily, there are many third party libraries that help displaying window titles directly in polybar (Remember make script executable with ~chmod +x~):
 
@@ -116,6 +109,17 @@ If you use i3wm, you probably cannot stand the title bar in tabbed/stacking mode
 - [[https://github.com/melangue/bspwm-window-titles][melangue/bspwm-window-titles]]
 
 Once you choose one, you can now hide i3 title bar by setting window title font size to zero with something like ~font pango:DejaVu Sans Mono 0~ in configuration file. (There are some solutions with [[https://i3wm.org/docs/userguide.html#default_border][4.12. Default border style for new windows]] like ~default_border pixel 1~ or ~for_window [class="^.*"] border pixel 1~ but all don't work for me)
+
+------
+
+To make the bar fancy, most configurations are highly dependent on extra icons, so make sure you install one of [[https://github.com/polybar/polybar/wiki/Fonts#icon-fonts][popular icon fonts]]. If you want try something new, you can go to the cheatsheet page for easier search:
+
+- [[https://www.nerdfonts.com/cheat-sheet][Nerd Fonts Cheatsheet]]. Except patched fonts listed in assets, there is also other third-party patched font such as [[https://github.com/laishulu/Sarasa-Mono-SC-Nerd][laishulu/Sarasa-Mono-SC-Nerd]], [[https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts][jonz94/Sarasa-Gothic-Nerd-Fonts]].
+- [[https://fontawesome.com/v5/cheatsheet/free/][FontAwesome v5 Cheatsheet]]
+- [[https://fonts.google.com/icons][Material icons Cheetsheet]]
+- Search [[https://materialdesignicons.com/][Material Design Icons]]
+- Search [[https://feathericons.com/][Feather Icons]]
+- Search [[https://oblador.github.io/react-native-vector-icons/][react-native-vector-icons]]
 
 ** terminator
 
