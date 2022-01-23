@@ -419,6 +419,53 @@ label = %time%
 ; animation-packetloss-framerate:
 ;   Framerate in milliseconds
 
+[module/networkspeedup]
+type = internal/network
+
+interface = wlp3s0
+
+format-connected = <label-connected>
+format-connected-prefix = "%{T3}祝%{T-}"
+
+label-connected = "%upspeed:7%"
+
+[module/networkspeeddown]
+type = internal/network
+
+interface = wlp3s0
+
+format-connected = <label-connected>
+format-connected-prefix = "%{T3}%{T-}"
+
+label-connected = "%downspeed:7%"
+
+[module/wired-network]
+type = internal/network
+interface = enp0s31f6
+
+format-connected-prefix = "%{T3}%{T-}"
+
+label-connected = %ifname%
+
+format-disconnected-prefix = "%{T3}ﴹ%{T-}"
+
+label-disconnected = %ifname% disconnected
+
+[module/wireless-network]
+type = internal/network
+
+interface = wlp3s0
+
+format-connected = <label-connected>
+format-connected-prefix = "%{T3}%{T-}"
+
+label-connected = %essid%
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = "%{T3}睊%{T-}"
+
+label-disconnected = %ifname% disconnected
+
 
 ; pulseaudio
 ;
