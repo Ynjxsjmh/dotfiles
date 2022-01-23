@@ -19,13 +19,32 @@
 
 ; Contents
 ;
-; * backlight
-; * battery
-; * date
-; * i3
-; * network
-; * pulseaudio
-; * script
+; * Global WM settings
+; * Modules
+; ** backlight
+; ** battery
+; ** date
+; ** i3
+; ** network
+; ** pulseaudio
+; ** script
+
+
+; Global WM settings
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Configuration#global-wm-settings
+;
+; Settings
+; --------------
+; margin-bottom:
+;   Adjust the _NET_WM_STRUT_PARTIAL top value
+;     Used for top aligned bars
+; 
+; margin-top:
+;   Adjust the _NET_WM_STRUT_PARTIAL bottom value
+;     Used for bottom aligned bars
 
 
 ; backlight
