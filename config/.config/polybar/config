@@ -231,6 +231,23 @@ animation-charging-framerate = 750
 ;     %date% (default)
 ;     %time%
 
+[module/date]
+type = internal/date
+date = %Y-%m-%d%
+
+format-prefix = "%{T3}%{T-}"
+
+label = %date%
+
+[module/time]
+type = internal/date
+time = %H:%M
+time-alt = %A
+
+format-prefix = "%{T3}鬒%{T-}"
+
+label = %time%
+
 
 ; i3
 ;
