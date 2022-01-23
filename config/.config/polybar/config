@@ -512,6 +512,17 @@ label-disconnected = %ifname% disconnected
 ; click-middle:
 ;   Right and Middle click
 
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume> <label-volume>
+
+label-muted = "%{T3}婢%{T-} Mute"
+
+ramp-volume-0 = "%{T3}%{T-}"
+ramp-volume-1 = "%{T3}%{T-}"
+ramp-volume-2 = "%{T3}%{T-}"
+
 
 ; script
 ;
