@@ -95,6 +95,19 @@ margin-top = 0
 ;   Enables pseudo-transparency for the bar
 ;   If set to true the bar can be transparent without a compositor.
 
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+pseudo-transparency = false
 
 
 ; backlight
