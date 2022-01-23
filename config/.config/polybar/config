@@ -9,6 +9,14 @@
 ;               \///    \///       \///  \///    \///   \////
 
 
+;   To learn more about how to configure Polybar:
+;   https://github.com/jaagr/polybar/wiki/
+;   https://github.com/jaagr/polybar/wiki/Configuration
+;   https://github.com/jaagr/polybar/wiki/Formatting
+;
+;   Themes:
+;   https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes
+
 ; Contents
 ;
 ; * backlight
