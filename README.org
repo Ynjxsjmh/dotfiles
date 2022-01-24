@@ -243,8 +243,7 @@ Download zsh
 Download antigen
 
 #+BEGIN_SRC bash
-$ sudo mkdir -p /usr/share/zsh/share/
-$ cd /usr/share/zsh/share
+$ mkdir ~/.antigen & cd ~/.antigen
 # Common download
 $ curl -L git.io/antigen > antigen.zsh
 # On Ubuntu lower version
