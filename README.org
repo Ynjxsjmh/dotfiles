@@ -15,7 +15,11 @@
 
 * stow -t /etc etc
 
-=pacman.conf= - pacman package manager configuration file.
+=pacman.conf=: pacman package manager configuration file. To use repos in archlinuxcn, you need to import PGP Keys from archlinuxcn:
+
+#+BEGIN_SRC bash
+$ sudo pacman -Sy && sudo pacman -S archlinuxcn-keyring
+#+END_SRC
 
 * stow bash
 
