@@ -780,12 +780,12 @@ interface = wlp3s0
 format-connected = <label-connected>
 format-connected-prefix = "%{T3}%{T-}"
 
-label-connected = %essid%
+label-connected = "%{A1:networkmanager_dmenu &:}%essid%%{A}"
 
 format-disconnected = <label-disconnected>
 format-disconnected-prefix = "%{T3}睊%{T-}"
 
-label-disconnected = %ifname% disconnected
+label-disconnected = "%{A1:networkmanager_dmenu &:}%ifname%%{A} disconnected"
 
 
 ; pulseaudio
