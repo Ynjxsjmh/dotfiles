@@ -30,6 +30,7 @@
 ; ** network
 ; ** pulseaudio
 ; ** script
+; ** xbacklight
 
 
 ; Global WM settings
@@ -894,3 +895,38 @@ ramp-volume-2 = "%{T3}%{T-}"
 ;     %counter%
 ;     %pid%
 ;   "scroll-(up|down)" will be executed using "/bin/sh -c [command]"
+
+
+; xbacklight
+;
+; This module shows information about the defined output's backlight level.
+; If this module doesn't work for you, try to use the backlight module
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-xbacklight
+;
+; Basic settings
+; --------------
+; output: default the monitor defined for the running bar
+;   XRandR output to get get values from
+; enable-scroll: default true
+;   Create scroll handlers used to set the backlight value
+;
+; Additional formatting
+; ---------------------
+; format:
+;   Available tags:
+;     <label> (default)
+;     <ramp>
+;     <bar>
+; label:
+;   Available tokens:
+;     %percentage% (default)
+; ramp-n: n ∈ [0, 4]
+;   Only applies if <ramp> is used
+; bar-width:
+; bar-indicator:
+; bar-fill:
+; bar-empty:
+;   Only applies if <bar> is used
