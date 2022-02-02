@@ -125,6 +125,19 @@ To make the bar fancy, most configurations are highly dependent on extra icons w
 - Search [[https://feathericons.com/][Feather Icons]]
 - Search [[https://oblador.github.io/react-native-vector-icons/][react-native-vector-icons]]
 
+In my polybar configuration, I consider following icons:
+
+- battery/ramp-battery
+- brightness/ramp-brightness
+- calendar
+- clock
+- upload/download speed
+- volume/ramp-volume
+- wifi/wifi-off/ramp-wifi
+- wired/wired-off
+
+I choose [[https://github.com/ryanoasis/nerd-fonts/blob/master/src/glyphs/Symbols-2048-em%20Nerd%20Font%20Complete.ttf][nerd font]] to cover most of them.
+
 ** terminator
 
 Documentation for all of Terminator's keybindings and config options in man pages is included in the source/packages. See:
