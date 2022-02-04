@@ -30,6 +30,24 @@ $ sudo pacman -Sy && sudo pacman -S archlinuxcn-keyring
 If you already have =.profile= in home directory, =stow bash= will fail. Remove the original =.profile= or use =--adopt= option.
 
 * stow config
+** fontconfig
+
+Use =man fonts-conf= to see configuration file format. After finishing editing ~$HOME/.config/fontconfig/fonts.conf~, to apply changes, you may need to do one of the following:
+
+1. If you only edit =pattern= elements, simply restarting applications is sufficient to load the new configuration.
+2. If you edit =scan= elements, before restarting applications, you may need to do ~fc-cache -fv~ to re-scans the font directories.
+3. Reload =.Xresources= with ~xrdb ~/.Xresources~
+4. Restart [[https://en.wikipedia.org/wiki/List_of_display_servers][the display server]]
+   4.1. X11/X.Org Server
+       - With [[https://en.wikipedia.org/wiki/X_display_manager][display manager]]: ~sudo systemctl restart display-manager~
+       - Without display manager: maybe ~sudo pkill X~
+   NOTE: This will forcefully quit all graphical programs, you'll lose any unsaved work, and you'll be logged out. Non-graphical programs will not be affected.
+   4.2. Wayland/KWin	
+       - For KWin on X: ~kwin_x11 --replace~, with =--replace=, the running apps in KDE would survive the restart of kwin.
+       - For KWin on Wayland: It is the session, basically, there's no way to recover.
+       - For Plasmashell: ~plasmashell --replace~ (new in Plasma 5.13), ~kquitapp5 plasmashell && kstart5 plasmashell~ (older, kquitapp5 tells plasmashell on DBus to gracefully quit).
+5. Reboot your machine
+
 ** i3
 
 Here I use [[https://github.com/Airblader/i3][i3-gaps]]. For i3 user guide, you can refer to [[https://i3wm.org/docs/userguide.html][i3: i3 User’s Guide]] or [[https://wiki.gentoo.org/wiki/I3][i3 - Gentoo Wiki]] as a supplement. This config mainly changes the following:
