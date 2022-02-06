@@ -159,6 +159,8 @@ In my polybar configuration, I consider following icons:
 
 I choose [[https://github.com/ryanoasis/nerd-fonts/blob/master/src/glyphs/Symbols-2048-em%20Nerd%20Font%20Complete.ttf][nerd font]] to cover most of them.
 
+If you use polybar in KDE, you might suffer from tray disappear. You can have a look at [[https://github.com/polybar/polybar/issues/2313][Plasma System Tray not working on Polybar · Issue #2313 · polybar/polybar]], the reason is that applications on your system don't actually provide a tray icon for polybar when running in KDE. Similarly, if there are multiple polybar instances or another program is already displaying the tray, only a single application can display the tray at a time, you can refer to [[https://github.com/polybar/polybar/issues/2077#issuecomment-620197324][Unable to display tray area after boot · Issue #2077 (comment) · polybar/polybar]] for more information.
+
 ** terminator
 
 Documentation for all of Terminator's keybindings and config options in man pages is included in the source/packages. See:
