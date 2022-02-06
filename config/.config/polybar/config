@@ -925,6 +925,11 @@ ramp-volume-2 = "%{T3}%{T-}"
 ; scroll-down:
 ;   "scroll-(up|down)" will be executed using "/bin/sh -c $COMMAND"
 
+[module/text]
+type = custom/text
+
+content = ""
+
 
 ; xbacklight
 ;
