@@ -152,6 +152,7 @@ In my polybar configuration, I consider following icons:
 - brightness/ramp-brightness
 - calendar
 - clock
+- headphone
 - upload/download speed
 - volume/ramp-volume
 - wifi/wifi-off/ramp-wifi
