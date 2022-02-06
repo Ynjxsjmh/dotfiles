@@ -30,6 +30,7 @@
 ; ** network
 ; ** pulseaudio
 ; ** script
+; ** text
 ; ** xbacklight
 
 
@@ -895,6 +896,34 @@ ramp-volume-2 = "%{T3}%{T-}"
 ;     %counter%
 ;     %pid%
 ;   "scroll-(up|down)" will be executed using "/bin/sh -c [command]"
+
+
+; text
+;
+; This module shows the defined content string.
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Module:-text
+;
+; Basic settings
+; --------------
+; content:
+;   Any random label
+;
+; Additional formatting
+; ---------------------
+; content-background:
+; content-foreground:
+; content-padding:
+;   "content" has the same properties as "format-NAME"
+; click-left:
+; click-middle:
+; click-right:
+;   "click-(left|middle|right)" will be executed using "/bin/sh -c $COMMAND"
+; scroll-up:
+; scroll-down:
+;   "scroll-(up|down)" will be executed using "/bin/sh -c $COMMAND"
 
 
 ; xbacklight
