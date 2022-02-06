@@ -746,7 +746,7 @@ type = internal/network
 interface = wlp3s0
 
 format-connected = <label-connected>
-format-connected-prefix = "%{T3}祝%{T-}"
+format-connected-prefix = "%{T3}%{T-}"
 
 label-connected = "%upspeed:7%"
 
@@ -756,7 +756,7 @@ type = internal/network
 interface = wlp3s0
 
 format-connected = <label-connected>
-format-connected-prefix = "%{T3}%{T-}"
+format-connected-prefix = "%{T3}%{T-}"
 
 label-connected = "%downspeed:7%"
 
