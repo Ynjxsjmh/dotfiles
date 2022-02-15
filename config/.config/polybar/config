@@ -119,6 +119,31 @@ pseudo-transparency = false
 ; ---
 ; https://github.com/polybar/polybar/wiki/Configuration#custom-variables
 
+[colors]
+; foreground:
+;   body text/default code/primary content
+; foreground-alt:
+;   comments/secondary content
+; background:
+;   background color
+; background-alt:
+;   background highlight
+foreground     = #839496
+foreground-alt = #93a1a1
+background     = #fdf6e3
+background-alt = #eee8d5
+white   = #ffffff
+black   = #000000
+yellow  = #b58900
+orange  = #cb4b16
+red     = #dc322f
+magenta = #d33682
+violet  = #6c71c4
+blue    = #268bd2
+cyan    = #2aa198
+green   = #859900
+
+
 ; Bar settings
 ;
 ; Doc
