@@ -737,24 +737,23 @@ format = <label-state> <label-mode>
 
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-background = #e85d00
+label-mode-foreground = ${colors.white}
+label-mode-background = ${colors.yellow}
 
 label-focused = %icon%
-label-focused-foreground = #ffffff
-label-focused-background = #4b5cc4
+label-focused-foreground = ${colors.white}
+label-focused-background = ${colors.blue}
 label-focused-padding = 3
 
 label-unfocused = %icon%
 label-unfocused-padding = 3
-label-unfocused-background = #000000
 
 label-visible = %icon%
-label-visible-underline = #555555
 label-visible-padding = 3
 
 label-urgent = %icon%
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
+label-urgent-foreground = ${colors.black}
+label-urgent-background = ${colors.red}
 label-urgent-padding = 3
 
 
