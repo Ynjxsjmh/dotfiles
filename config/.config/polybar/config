@@ -21,6 +21,7 @@
 ;
 ; * Global WM settings
 ; * Application settings
+; * Custom variables
 ; * Bar settings
 ; * Modules
 ; ** backlight
@@ -111,6 +112,12 @@ compositing-underline = over
 compositing-border = over
 
 pseudo-transparency = false
+
+; Custom variables
+;
+; Doc
+; ---
+; https://github.com/polybar/polybar/wiki/Configuration#custom-variables
 
 ; Bar settings
 ;
