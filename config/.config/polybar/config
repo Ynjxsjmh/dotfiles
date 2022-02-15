@@ -736,25 +736,25 @@ ws-icon-default = "%{T3}%{T-}"
 format = <label-state> <label-mode>
 
 label-mode = %mode%
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = ${colors.white}
 label-mode-background = ${colors.yellow}
 
 label-focused = %icon%
 label-focused-foreground = ${colors.white}
 label-focused-background = ${colors.blue}
-label-focused-padding = 3
+label-focused-padding = 2
 
 label-unfocused = %icon%
-label-unfocused-padding = 3
+label-unfocused-padding = 2
 
 label-visible = %icon%
-label-visible-padding = 3
+label-visible-padding = 2
 
 label-urgent = %icon%
 label-urgent-foreground = ${colors.black}
 label-urgent-background = ${colors.red}
-label-urgent-padding = 3
+label-urgent-padding = 2
 
 
 ; network
