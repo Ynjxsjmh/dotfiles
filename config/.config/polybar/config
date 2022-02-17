@@ -601,7 +601,7 @@ animation-charging-framerate = 750
 type = internal/date
 date = %Y-%m-%d%
 
-format-prefix = "%{T3}%{T-}"
+format-prefix = "%{T3}%{T-} "
 
 label = %date%
 
@@ -610,7 +610,7 @@ type = internal/date
 time = %H:%M
 time-alt = %A
 
-format-prefix = "%{T3}鬒%{T-}"
+format-prefix = "%{T3}鬒%{T-} "
 
 label = %time%
 
