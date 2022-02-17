@@ -851,11 +851,11 @@ label-connected = "%downspeed:7%"
 type = internal/network
 interface = enp0s31f6
 
-format-connected-prefix = "%{T3}%{T-}"
+format-connected-prefix = "%{T3}%{T-} "
 
 label-connected = %ifname%
 
-format-disconnected-prefix = "%{T3}ﴹ%{T-}"
+format-disconnected-prefix = "%{T3}ﴹ%{T-} "
 
 label-disconnected = %ifname% disconnected
 
@@ -865,12 +865,12 @@ type = internal/network
 interface = wlp3s0
 
 format-connected = <label-connected>
-format-connected-prefix = "%{T3}%{T-}"
+format-connected-prefix = "%{T3}%{T-} "
 
 label-connected = "%{A1:networkmanager_dmenu &:}%essid%%{A}"
 
 format-disconnected = <label-disconnected>
-format-disconnected-prefix = "%{T3}睊%{T-}"
+format-disconnected-prefix = "%{T3}睊%{T-} "
 
 label-disconnected = "%{A1:networkmanager_dmenu &:}%ifname%%{A} disconnected"
 
