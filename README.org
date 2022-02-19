@@ -42,7 +42,7 @@ Use =man fonts-conf= to see configuration file format. After finishing editing ~
        - With [[https://en.wikipedia.org/wiki/X_display_manager][display manager]]: ~sudo systemctl restart display-manager~
        - Without display manager: maybe ~sudo pkill X~
    NOTE: This will forcefully quit all graphical programs, you'll lose any unsaved work, and you'll be logged out. Non-graphical programs will not be affected.
-   4.2. Wayland/KWin	
+   4.2. Wayland/KWin
        - For KWin on X: ~kwin_x11 --replace~, with =--replace=, the running apps in KDE would survive the restart of kwin.
        - For KWin on Wayland: It is the session, basically, there's no way to recover.
        - For Plasmashell: ~plasmashell --replace~ (new in Plasma 5.13), ~kquitapp5 plasmashell && kstart5 plasmashell~ (older, kquitapp5 tells plasmashell on DBus to gracefully quit).
@@ -52,7 +52,7 @@ Use =man fonts-conf= to see configuration file format. After finishing editing ~
 
 Here I use [[https://github.com/Airblader/i3][i3-gaps]]. For i3 user guide, you can refer to [[https://i3wm.org/docs/userguide.html][i3: i3 User’s Guide]] or [[https://wiki.gentoo.org/wiki/I3][i3 - Gentoo Wiki]] as a supplement. This config mainly changes the following:
 
-- Modifier key changed to =Win=. In i3, commands are invoked with a modifier key, referred to as =$mod=. This is =Alt= (Mod1) by default, with =Super= (Mod4) being a popular alternative. Super is the key usually represented on a keyboard as a Windows icon, or on an Apple keyboard as a Command key. 
+- Modifier key changed to =Win=. In i3, commands are invoked with a modifier key, referred to as =$mod=. This is =Alt= (Mod1) by default, with =Super= (Mod4) being a popular alternative. Super is the key usually represented on a keyboard as a Windows icon, or on an Apple keyboard as a Command key.
 - Four navigation shortcuts, j, k, l and "semicolon" changed to vim style, h, j, k, l.
 - =-= and =\= to split in horizontal and vertical orientation
 
@@ -260,6 +260,36 @@ $ ~/.tmux/plugins/tpm/bin/install_plugins
 See [[https://github.com/tmux-plugins/tpm/blob/master/docs/managing_plugins_via_cmd_line.md][Managing plugins via the command line · tmux-plugins/tpm]] for more detail.
 
 If you are suffering from network problem, such as couldn't perform git clone, you can edit the =clone_plugin()= function in =~/.tmux/plugins/tpm/scripts/install_plugins.sh=.
+
+*** Troubleshooting
+**** Scrolling issues
+
+If you have issues scrolling with Shift-Page Up/Down or Shift-Mouse Scroll in your terminal and your goal is just to copy text after selecting. Then the easiest way to do the same thing is to use tmux's native scrollback, following are steps to do that:
+
+1. Enter copy mode with =C-b [= or just scroll the buffer.
+2. Use your desired ways to go to the position from where you want to start copying. Available ways are:
+  2.1 The arrow keys
+  2.2 Emacs keybindings
+  2.3 Vim keybindings
+3. Press keys to start copying.
+  2.1 Default is Emacs keybindings: =C-Space= or =C-@=
+  2.2 Add following config into your =~/.tmux.conf= to enable Vim keybindings
+
+#+BEGIN_SRC
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
+bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
+#+END_SRC
+4. Use your deired ways to go to the end of text you want to copy.
+5. Press keys to copy from tmux buffer.
+  5.1 Default is Emacs keybindings: =M-w= or =C-w=
+6. Use =C-b ]= to paste copied text from tmux clipboard.
+
+You can also try solution from [[https://wiki.archlinux.org/title/Tmux#Scrolling_issues][Scrolling issues | tmux - ArchWiki]] which enables scrolling while pressing Shift:
+
+#+BEGIN_SRC
+set -ga terminal-overrides ',xterm*:smcup@:rmcup@'
+#+END_SRC
 
 *** Possible Error
 
