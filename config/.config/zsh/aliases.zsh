@@ -27,6 +27,8 @@ alias battery='upower -i $(upower -e | grep "BAT") | grep -E "state|to\ full|to\
 # See https://wiki.archlinux.org/title/Localization/Simplified_Chinese_(简体中文)#zip_压缩包乱码
 alias unzip='unar'
 
+alias rm='echo "This is not the command you are looking for."; false'
+
 unalias gl
 alias gl='git log --pretty="%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s" --date-order --graph --date=iso'
 alias gla='git log --pretty="%C(cyan)%ad %C(red)%aN %C(yellow)%h %C(cyan)%d %Creset%s" --date-order --graph --date=iso'
