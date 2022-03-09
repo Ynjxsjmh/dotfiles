@@ -985,6 +985,18 @@ ramp-volume-4 = "%{T3}ﱛ%{T-}"
 ;     %pid%
 ;   "scroll-(up|down)" will be executed using "/bin/sh -c [command]"
 
+[module/microphone]
+type = custom/script
+
+; Using `pacmd list-sources` to find the name of source
+interval = 1
+format = <label>
+exec = bash ~/.config/polybar/script/mic-volume/mic-volume.sh show-vol 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+
+click-left  = bash ~/.config/polybar/script/mic-volume/mic-volume.sh mute-vol
+scroll-up   = bash ~/.config/polybar/script/mic-volume/mic-volume.sh inc-vol
+scroll-down = bash ~/.config/polybar/script/mic-volume/mic-volume.sh dec-vol
+
 
 ; text
 ;
