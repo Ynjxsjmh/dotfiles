@@ -3,6 +3,7 @@ alias sudo='sudo '
 alias pls='sudo sh -c "$(fc -ln -1)"'
 # alias tmux="tmux new-session -d -s \>_ 2>/dev/null; tmux new-session -t \>_ \; set-option destroy-unattached"
 
+alias space='du -sh * | sort -hr'
 alias df='df -h'
 alias du='du -c -h'
 
