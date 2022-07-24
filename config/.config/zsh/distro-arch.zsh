@@ -6,8 +6,8 @@ if ! is-distro-arch; then
 fi
 
 alias S='sudo pacman -S'
-alias Syu='sudo pacman -Syu'
-alias Syyu='sudo pacman -Syyu'
+alias Syu='sudo pacman -Sy archlinux-keyring && pacman -Syu'
+alias Syyu='sudo pacman -Sy archlinux-keyring && pacman -Syyu'
 
 # Querying package databases
 #   -Ss string1 string2: Search for packages in the database,
