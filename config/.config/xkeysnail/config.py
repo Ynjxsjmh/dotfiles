@@ -38,7 +38,7 @@ define_keymap(None, {
     },
 
     # Alternative for bracket
-    K('APOSTROPHE'): {                  # '
+    K('LEFT_BRACE'): {                  # [
         K('e'): K('Shift-KEY_9'),       # (
         K('r'): K('Shift-KEY_0'),       # )
         K('d'): K('Shift-LEFT_BRACE'),  # {
@@ -55,7 +55,7 @@ define_keymap(None, {
     },
 
     # Alternative for numbers
-    K('SLASH'): {                       # /
+    K('APOSTROPHE'): {                  # '
         K('w'): Key.KEY_1,
         K('e'): Key.KEY_2,
         K('r'): Key.KEY_3,
