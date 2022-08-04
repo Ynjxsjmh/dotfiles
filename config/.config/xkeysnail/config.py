@@ -6,9 +6,51 @@ from xkeysnail.transform import *
 # define timeout for multipurpose_modmap
 define_timeout(1)
 
-# [Global modemap] Change modifier keys as in xmodmap
+# https://web.archive.org/web/20181111222712/https://mdickens.me/typing/letter_frequency.html
+# https://web.archive.org/web/20181018014801/http://mtgap.bilfo.com/theory-of-letter-frequency.html
+# Punctuation Frequency: , . - " _ ' ) ( ; = : / * ! ? $ > { } [ ] \ + | & < % @ # ^ ` ~
+# Exclude some keys    : - _ = * ! ? $ + & % @ # ^ ` ~
+# [Global modemap] Add alternative for punctuation and number
 define_modmap({
-    Key.CAPSLOCK: Key.LEFT_CTRL
+    # Alternative for punctuation
+    K(";-q"): K("!"),
+    K(";-w"): K("@"),
+    K(";-e"): K("#"),
+    K(";-r"): K("$"),
+    K(";-t"): K("%"),
+    K(";-a"): K("^"),
+    K(";-s"): K("&"),
+    K(";-d"): K("*"),
+    K(";-f"): K("-"),
+    K(";-g"): K("+"),
+    K(";-z"): K("_"),
+    K(";-x"): K("="),
+    K(";-c"): K("?"),
+    K(";-v"): K("`"),
+    K(";-b"): K("~"),
+
+    # Alternative for bracket
+    K("'-r"): K("{"),
+    K("'-t"): K("}"),
+    K("'-f"): K("("),
+    K("'-g"): K(")"),
+    K("'-v"): K("["),
+    K("'-b"): K("]"),
+    K("'-a"): K("/"),
+    K("'-s"): K("|"),
+    K("'-d"): K("\\"),
+
+    # Alternative for numbers
+    K("/-w"): K("1"),
+    K("/-e"): K("2"),
+    K("/-r"): K("3"),
+    K("/-s"): K("4"),
+    K("/-d"): K("5"),
+    K("/-f"): K("6"),
+    K("/-x"): K("7"),
+    K("/-c"): K("8"),
+    K("/-v"): K("9"),
+    K("/-g"): K("0"),
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
