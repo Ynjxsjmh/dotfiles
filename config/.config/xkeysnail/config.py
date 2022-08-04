@@ -41,10 +41,10 @@ define_keymap(None, {
     K('LEFT_BRACE'): {                  # [
         K('e'): K('Shift-KEY_9'),       # (
         K('r'): K('Shift-KEY_0'),       # )
-        K('d'): K('Shift-LEFT_BRACE'),  # {
-        K('f'): K('Shift-RIGHT_BRACE'), # }
-        K('c'): K('LEFT_BRACE'),        # [
-        K('v'): K('RIGHT_BRACE'),       # ]
+        K('d'): K('LEFT_BRACE'),        # [
+        K('f'): K('RIGHT_BRACE'),       # ]
+        K('c'): K('Shift-LEFT_BRACE'),  # {
+        K('v'): K('Shift-RIGHT_BRACE'), # }
         K('t'): K('SLASH'),             # /
         K('g'): K('Shift-SLASH'),       # |
         K('b'): K('BACKSLASH'),         # \
