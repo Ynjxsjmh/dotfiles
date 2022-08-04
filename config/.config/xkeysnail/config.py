@@ -37,8 +37,8 @@ define_keymap(None, {
         K('b'): K('Shift-SEMICOLON'),  # :
     },
 
+    # Alternative for bracket
     K('APOSTROPHE'): {                  # '
-        # Alternative for bracket
         K('e'): K('Shift-KEY_9'),       # (
         K('r'): K('Shift-KEY_0'),       # )
         K('d'): K('Shift-LEFT_BRACE'),  # {
@@ -52,22 +52,21 @@ define_keymap(None, {
         K('w'): K('Shift-APOSTROPHE'),  # "
         K('a'): K('GRAVE'),             # `
         K('s'): K('Shift-GRAVE'),       # ~
-    }
-})
-
-
+    },
 
     # Alternative for numbers
-    K("/-w"): K("1"),
-    K("/-e"): K("2"),
-    K("/-r"): K("3"),
-    K("/-s"): K("4"),
-    K("/-d"): K("5"),
-    K("/-f"): K("6"),
-    K("/-x"): K("7"),
-    K("/-c"): K("8"),
-    K("/-v"): K("9"),
-    K("/-g"): K("0"),
+    K('BACKSLASH'): {                   # /
+        K('w'): Key.KEY_1,
+        K('e'): Key.KEY_2,
+        K('r'): Key.KEY_3,
+        K('s'): Key.KEY_4,
+        K('d'): Key.KEY_5,
+        K('f'): Key.KEY_6,
+        K('x'): Key.KEY_7,
+        K('c'): Key.KEY_8,
+        K('v'): Key.KEY_9,
+        K('g'): Key.KEY_0,
+    },
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
