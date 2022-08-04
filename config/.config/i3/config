@@ -161,9 +161,11 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# Audio controls (now provided by Plasma)
-# bindsym XF86AudioLowerVolume exec ~/audio.sh --down
-# bindsym XF86AudioRaiseVolume exec ~/audio.sh --up
+# Audio controls  https://wiki.archlinux.org/title/Xbindkeys
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -1000"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +1000"
+bindsym XF86AudioMute        exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+bindsym XF86AudioMicMute     exec "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
 
 # Brightness controls
 bindsym XF86MonBrightnessUp   exec "xbacklight -inc 5"
