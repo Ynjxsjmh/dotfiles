@@ -29,4 +29,11 @@ alias Qi='pacman -Qi'
 alias Ru='sudo pacman -Rsu'
 alias Rn='sudo pacman -Rsn'
 
+# Yay is a Pacman wrapper with AUR support. It passes options to
+# Makepkg and Pacman after resolving packages to install/upgrade.
+#   -S, -Si, -Sl, -Ss, -Su, -Sc, -Qu
+#          These operations are extended to support both AUR and repo packages.
+#   -R     Yay will also remove cached data about devel packages.
 alias yS='yay -S'
+alias yRu='yay -Rsu'
+alias yRn='yay -Rsn'
