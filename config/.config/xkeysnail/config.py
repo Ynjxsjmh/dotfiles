@@ -32,7 +32,7 @@ define_keymap(None, {
         K('g'): K('Shift-EQUAL'),      # +
         K('z'): K('MINUS'),            # -
         K('x'): K('EQUAL'),            # =
-        K('c'): K('Shift-BACKSLASH'),  # ?
+        K('c'): K('Shift-SLASH'),      # ?
         K('v'): K('SEMICOLON'),        # ;
         K('b'): K('Shift-SEMICOLON'),  # :
     },
@@ -45,9 +45,9 @@ define_keymap(None, {
         K('f'): K('Shift-RIGHT_BRACE'), # }
         K('c'): K('LEFT_BRACE'),        # [
         K('v'): K('RIGHT_BRACE'),       # ]
-        K('t'): K('BACKSLASH'),         # /
+        K('t'): K('SLASH'),             # /
         K('g'): K('Shift-SLASH'),       # |
-        K('b'): K('SLASH'),             # \
+        K('b'): K('BACKSLASH'),         # \
         K('q'): K('APOSTROPHE'),        # '
         K('w'): K('Shift-APOSTROPHE'),  # "
         K('a'): K('GRAVE'),             # `
@@ -55,7 +55,7 @@ define_keymap(None, {
     },
 
     # Alternative for numbers
-    K('BACKSLASH'): {                   # /
+    K('SLASH'): {                       # /
         K('w'): Key.KEY_1,
         K('e'): Key.KEY_2,
         K('r'): Key.KEY_3,
