@@ -6,6 +6,12 @@ from xkeysnail.transform import *
 # define timeout for multipurpose_modmap
 define_timeout(1)
 
+# [Global modemap] swap LWin and LCtrl
+define_modmap({
+    Key.LEFT_META: Key.LEFT_CTRL,
+    Key.LEFT_CTRL: Key.LEFT_META,
+})
+
 # Alternative for punctuation
 # https://web.archive.org/web/20181111222712/https://mdickens.me/typing/letter_frequency.html
 # https://web.archive.org/web/20181018014801/http://mtgap.bilfo.com/theory-of-letter-frequency.html
