@@ -48,8 +48,6 @@ define_keymap(None, {
         K('t'): K('SLASH'),             # /
         K('g'): K('Shift-SLASH'),       # |
         K('b'): K('BACKSLASH'),         # \
-        K('q'): K('APOSTROPHE'),        # '
-        K('w'): K('Shift-APOSTROPHE'),  # "
         K('a'): K('GRAVE'),             # `
         K('s'): K('Shift-GRAVE'),       # ~
     },
@@ -66,6 +64,8 @@ define_keymap(None, {
         K('c'): Key.KEY_8,
         K('v'): Key.KEY_9,
         K('g'): Key.KEY_0,
+        K('q'): K('APOSTROPHE'),        # '
+        K('a'): K('Shift-APOSTROPHE'),  # "
     },
 })
 
