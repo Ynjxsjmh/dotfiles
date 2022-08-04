@@ -6,39 +6,50 @@ from xkeysnail.transform import *
 # define timeout for multipurpose_modmap
 define_timeout(1)
 
+# Alternative for punctuation
 # https://web.archive.org/web/20181111222712/https://mdickens.me/typing/letter_frequency.html
 # https://web.archive.org/web/20181018014801/http://mtgap.bilfo.com/theory-of-letter-frequency.html
 # Punctuation Frequency: , . - " _ ' ) ( ; = : / * ! ? $ > { } [ ] \ + | & < % @ # ^ ` ~
-# Exclude some keys    : - _ = * ! ? $ + & % @ # ^ ` ~
-# [Global modemap] Add alternative for punctuation and number
-define_modmap({
+# Exclude some keys    : - _ ; = : * ! ? $ + & % @ # ^ ` ~
+define_keymap(None, {
     # Alternative for punctuation
-    K(";-q"): K("!"),
-    K(";-w"): K("@"),
-    K(";-e"): K("#"),
-    K(";-r"): K("$"),
-    K(";-t"): K("%"),
-    K(";-a"): K("^"),
-    K(";-s"): K("&"),
-    K(";-d"): K("*"),
-    K(";-f"): K("-"),
-    K(";-g"): K("+"),
-    K(";-z"): K("_"),
-    K(";-x"): K("="),
-    K(";-c"): K("?"),
-    K(";-v"): K("`"),
-    K(";-b"): K("~"),
+    K('SEMICOLON'): {                  # ;
+        K('q'): K('Shift-KEY_1'),      # !
+        K('w'): K('Shift-KEY_2'),      # @
+        K('e'): K('Shift-KEY_3'),      # #
+        K('r'): K('Shift-KEY_4'),      # $
+        K('t'): K('Shift-KEY_5'),      # %
+        K('a'): K('Shift-KEY_6'),      # ^
+        K('s'): K('Shift-KEY_7'),      # &
+        K('d'): K('Shift-KEY_8'),      # *
+        K('f'): K('Shift-MINUS'),      # _
+        K('g'): K('Shift-EQUAL'),      # +
+        K('z'): K('MINUS'),            # -
+        K('x'): K('EQUAL'),            # =
+        K('c'): K('Shift-BACKSLASH'),  # ?
+        K('v'): K('SEMICOLON'),        # ;
+        K('b'): K('Shift-SEMICOLON'),  # :
+    },
 
-    # Alternative for bracket
-    K("'-r"): K("{"),
-    K("'-t"): K("}"),
-    K("'-f"): K("("),
-    K("'-g"): K(")"),
-    K("'-v"): K("["),
-    K("'-b"): K("]"),
-    K("'-a"): K("/"),
-    K("'-s"): K("|"),
-    K("'-d"): K("\\"),
+    K('APOSTROPHE'): {                  # '
+        # Alternative for bracket
+        K('e'): K('Shift-KEY_9'),       # (
+        K('r'): K('Shift-KEY_0'),       # )
+        K('d'): K('Shift-LEFT_BRACE'),  # {
+        K('f'): K('Shift-RIGHT_BRACE'), # }
+        K('c'): K('LEFT_BRACE'),        # [
+        K('v'): K('RIGHT_BRACE'),       # ]
+        K('t'): K('BACKSLASH'),         # /
+        K('g'): K('Shift-SLASH'),       # |
+        K('b'): K('SLASH'),             # \
+        K('q'): K('APOSTROPHE'),        # '
+        K('w'): K('Shift-APOSTROPHE'),  # "
+        K('a'): K('GRAVE'),             # `
+        K('s'): K('Shift-GRAVE'),       # ~
+    }
+})
+
+
 
     # Alternative for numbers
     K("/-w"): K("1"),
