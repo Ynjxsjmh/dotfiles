@@ -246,6 +246,9 @@ bindsym $mod+z mode "$mode_system"
 #    }
 #}
 
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # Applications behaving as "pop ups" are set to be always floating
 #  i.e. popup, do stuff, close
 # To get WM_CLASS and WM_TITLE values, on X run "xprop"
