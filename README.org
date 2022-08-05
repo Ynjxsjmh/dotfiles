@@ -307,6 +307,38 @@ unbind '"'
 bind \ split-window -h
 #+END_SRC
 
+** xkeysnail
+
+[[https://web.archive.org/web/20181111222712/https://mdickens.me/typing/letter_frequency.html][Letter Frequency]] lists punctuation frequency
+
+#+begin_quote
+Punctuation Frequency:
+
+ , . - " _ ' ) ( ; = : / * ! ? $ > { } [ ] \ + | & < % @ # ^ ` ~
+
+ _ ( ) ; , = . * " - / $ > { } : ' \ [ ] & + < | @ # ! % ? ~ ^ ` (Programming)
+#+end_quote
+
+After excluding brackets and predefined leader key(~;['~), we have 15 punctuation left. According to rules 1) Frequency 2) Mirror Symmetry, I map these punctuation to keys in left hand area of QWERTY keyboard:
+
+#+begin_example
+ !, Exclamation mark         (Warning)
+ @, At sign                  (Z)
+ #, *H*ash, Number sign      (Symmetry->G)
+ $, *D*ollar sign, Peso sign (Unique->D)
+ %, Percent sign     (Least frequent->T)
+ ^, Caret            (Least frequent->B)
+ &, Ampersand        (R)
+ *, *A*sterisk   (Most frequent->A)
+ _, *U*nderscore (Most frequent->F)
+ +, Plus    (X)
+ -, *M*inus (Symmetry->V)
+ =, *E*qual (Most frequent->E)
+ ?, *Q*uestion mark (Unique->Q)
+ ;, *S*emicolon     (Unique->S)
+ :, *C*olon         (Most frequent->C)
+#+end_example
+
 ** zsh
 
 Download zsh
