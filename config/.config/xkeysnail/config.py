@@ -20,21 +20,21 @@ define_modmap({
 define_keymap(None, {
     # Alternative for punctuation
     K('SEMICOLON'): {                  # ;
-        K('q'): K('Shift-KEY_1'),      # !
-        K('w'): K('Shift-KEY_2'),      # @
-        K('e'): K('Shift-KEY_3'),      # #
-        K('r'): K('Shift-KEY_4'),      # $
+        K('w'): K('Shift-KEY_1'),      # !
+        K('z'): K('Shift-KEY_2'),      # @
+        K('g'): K('Shift-KEY_3'),      # #
+        K('d'): K('Shift-KEY_4'),      # $
         K('t'): K('Shift-KEY_5'),      # %
-        K('a'): K('Shift-KEY_6'),      # ^
-        K('s'): K('Shift-KEY_7'),      # &
-        K('d'): K('Shift-KEY_8'),      # *
+        K('b'): K('Shift-KEY_6'),      # ^
+        K('r'): K('Shift-KEY_7'),      # &
+        K('a'): K('Shift-KEY_8'),      # *
         K('f'): K('Shift-MINUS'),      # _
-        K('g'): K('Shift-EQUAL'),      # +
-        K('z'): K('MINUS'),            # -
-        K('x'): K('EQUAL'),            # =
-        K('c'): K('Shift-SLASH'),      # ?
-        K('v'): K('SEMICOLON'),        # ;
-        K('b'): K('Shift-SEMICOLON'),  # :
+        K('x'): K('Shift-EQUAL'),      # +
+        K('v'): K('MINUS'),            # -
+        K('e'): K('EQUAL'),            # =
+        K('q'): K('Shift-SLASH'),      # ?
+        K('s'): K('SEMICOLON'),        # ;
+        K('c'): K('Shift-SEMICOLON'),  # :
     },
 
     # Alternative for bracket
@@ -48,8 +48,6 @@ define_keymap(None, {
         K('t'): K('SLASH'),             # /
         K('g'): K('Shift-SLASH'),       # |
         K('b'): K('BACKSLASH'),         # \
-        K('a'): K('GRAVE'),             # `
-        K('s'): K('Shift-GRAVE'),       # ~
     },
 
     # Alternative for numbers
@@ -64,8 +62,10 @@ define_keymap(None, {
         K('c'): Key.KEY_8,
         K('v'): Key.KEY_9,
         K('g'): Key.KEY_0,
-        K('q'): K('APOSTROPHE'),        # '
-        K('a'): K('Shift-APOSTROPHE'),  # "
+        K('a'): K('APOSTROPHE'),        # ', Apostrophe
+        K('q'): K('Shift-APOSTROPHE'),  # ",
+        K('g'): K('GRAVE'),             # `, Grave
+        K('t'): K('Shift-GRAVE'),       # ~, Tilde
     },
 })
 
