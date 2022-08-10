@@ -21,7 +21,7 @@
 $ sudo pacman -Sy && sudo pacman -S archlinuxcn-keyring
 #+END_SRC
 
-* stow bash
+* stow home
 
 =.profile= sets =OS_TYPE= and =DISTRO_TYPE=.
 
