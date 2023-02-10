@@ -89,10 +89,12 @@ Some tools you must install:
 - [[https://github.com/alacritty/alacritty][alacritty]] as terminator.
 - [[https://github.com/meskarune/i3lock-fancy][i3lock-fancy]] as screen locker.
 
-To use another window manager with plasma, you can refer to [[https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma][Tutorials/Using Other Window Managers with Plasma - KDE UserBase Wiki]]. To use i3 as WM, you can refer to /u/shinyeye4's [[https://www.reddit.com/r/unixporn/comments/64mihc/i3_kde_plasma_a_match_made_in_heaven/dg4k0wq?utm_source=share&utm_medium=web2x&context=3][comment]] and config [[https://github.com/avivace/dotfiles#i3--plasma-integration][i3 + Plasma]]. Following are some dotfiles I found related with this situation:
+To use another window manager instead of the default KWin in the Plasma desktop environment developed by KDE, you can refer to [[https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma][Tutorials/Using Other Window Managers with Plasma - KDE UserBase Wiki]]. Specifically, to use i3 as WM, first you need to config i3 to avoid tiling popups and dropdown windows from Plasma, then create =~/.config/plasma-workspace/env/wm.sh= and made sure that it has execution privileges to config Plasma to load i3 (If it doesn't work, you can add ~export KDEWM=/usr/bin/i3~ in ~~/.xprofile~). You can refer to [[https://web.archive.org/web/20230210054734/https://maxnatt.gitlab.io/posts/kde-plasma-with-i3wm/][KDE Plasma with i3 WM Instead of KWin | Max's Blog]] for more detail. Following are some dotfiles I found related with this situation:
 
 - [[https://github.com/avivace/dotfiles][avivace/dotfiles: i3 + Plasma]]
 - [[https://github.com/eloquenza/dotfiles][eloquenza/dotfiles: a combination of KDE & i3]]
+
+If you have installed multiple window managements and desktop environments, you can choose which one to use in the login page.
 
 ** polybar
 
