@@ -23,6 +23,8 @@ alias ..5="cd ../../../../.."
 
 alias battery='upower -i $(upower -e | grep "BAT") | grep -E "state|to\ full|to\ empty|percentage"'
 
+alias ssh='TERM=xterm-256color ssh'
+
 # unar can detect encoding automatically,
 # unzip need extra package to support gbk encoding.
 # See https://wiki.archlinux.org/title/Localization/Simplified_Chinese_(简体中文)#zip_压缩包乱码
